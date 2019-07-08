@@ -1,0 +1,56 @@
+--- 
+title: "Cheat sheets for Morden Java"
+author: "Ohsang Kwon"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Prerequisites
+## @FunctionalInterface 
+
+### Funcatio
+```{java  eval=TRUE}
+  R apply(T t);
+```
+
+### Consumer
+```{java  eval=TRUE}
+  void accept(T t);
+```
+
+```{java  eval=TRUE}
+  final Consumer<String> print = value -> System.out.println(value);
+  print.accept("test");
+```
+
+
+### Predicate
+```{java  eval=TRUE}
+  boolean test(T t);
+```
+
+```{java  eval=TRUE}
+  private static <T> List<T> filter(final List<T> list, final Predicate<T> filter) {
+    final List<T> result = new ArrayList<>();
+    for (final T input : list) {
+      if (filter.test(input)) {
+        result.add(input);
+      }
+    }
+    return result;
+  }
+```
+
+
+### Supplier
+Lazy evaluation
+```{java  eval=TRUE}
+  T get();
+```
+
+Very expensive sample

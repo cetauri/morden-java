@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1561734568039.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3279712072",
+    "id" : "9AB1D6ED",
+    "lastKnownWriteTime" : 1561741662,
+    "last_content_update" : 1561741662474,
+    "path" : "~/bookdown/morden-java/02-Method_Reference.Rmd",
+    "project_path" : "02-Method_Reference.Rmd",
+    "properties" : {
+        "cursorPosition" : "47,0",
+        "scrollLine" : "45"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
